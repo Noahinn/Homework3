@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/paperButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="32dp"
+        android:onClick="activityB"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageButton
+        android:id="@+id/scissorsButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="116dp"
+        android:onClick="activityB"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paperButton"
+        app:srcCompat="@drawable/scissors" />
+
+    <ImageButton
+        android:id="@+id/rockButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="116dp"
+        android:onClick="activityB"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scissorsButton"
+        app:srcCompat="@drawable/rock" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:text="LET PLAY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
